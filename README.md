@@ -14,7 +14,7 @@ Change to the directory where you installed the application and run the followin
 You'll be prompted to enter the 4 digit year of your oldest note. 
 
     Earliest year:   
-Look where you specified the `table_output` to go for your stats.  
+Look for the output where you specified with the `table_output` variable.  
 
 ### Sample Output 
 ![Will's Zettelkasting Stats](assets/table_sample.png)
