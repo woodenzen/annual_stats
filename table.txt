@@ -1,3 +1,8 @@
+# Readme
+## Annual Note, Link, and Word Count for the entire zettelkasten.
+
+This works only if your zettelkasten is hosted through The Archive.
+
 ╒════════╤══════════╤═════════╤═════════╕
 │   Year │   Zettel │   Links │   Words │
 ╞════════╪══════════╪═════════╪═════════╡
