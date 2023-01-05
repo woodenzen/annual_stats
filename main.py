@@ -5,11 +5,17 @@ import re
 import datetime
 from tabulate import tabulate
 
+
 '''
-look for every file with a date in the name
+User Setting Section
 '''
 
 path = "/Users/will/Dropbox/zettelkasten/"
+table_output = "/Users/will/Dropbox/zettelkasten/media/table.txt"
+
+'''
+look for every file with a date in the name
+'''
 
 def get_files(year):
     files = []
@@ -65,18 +71,18 @@ if __name__ == "__main__":
     earliest_input = input("Earliest year: ")
     earliest = int(earliest_input)
     annual = []
+    
     # We iterate through the years, starting with the earliest year and ending with the current year. We return all the values we need for each year and append them to the annual list.
     for year in range(earliest,next_year()):
         results = get_files(year)
-        # annual = year, results[1], get_links(year, '[[20'), get_words(year) 
         annual.append([year, results[1], get_links(year, '[[20'), get_words(year)])      
          
 # save the table to a file using tabulate
 table = tabulate([*annual], 
-                 headers=["Year", "Zettel", "Links", "Words"], 
+                 headers=["Year", "Notes", "Links", "Words"], 
                  tablefmt='fancy_grid', 
                  missingval='N/A')
 
 # use context manager to create table.txt file and write table to it
-with open('/Users/will/Dropbox/Projects/zettelkasten/stats/annual/table.txt', 'w') as f:
+with open(table_output, 'w') as f:
   f.write(table)
