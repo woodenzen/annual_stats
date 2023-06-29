@@ -7,11 +7,10 @@ from tabulate import tabulate
 
 
 '''
-User Setting Section
-'''
-
+`User Setting Section
+``'''
 path = "/Users/will/Dropbox/zettelkasten/"
-table_output = "/Users/will/Dropbox/zettelkasten/media/table.txt"
+table_output = "table.txt"
 
 '''
 look for every file with a date in the name
