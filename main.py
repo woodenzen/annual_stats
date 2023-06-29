@@ -85,3 +85,4 @@ table = tabulate([*annual],
 # use context manager to create table.txt file and write table to it
 with open(table_output, 'w') as f:
   f.write(table)
+  print("Table saved to " + table_output)
